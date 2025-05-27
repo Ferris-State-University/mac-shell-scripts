@@ -1,0 +1,18 @@
+#!/bin/zsh
+
+# Get the clipboard content
+content=$(pbpaste)
+
+# Make replacements
+#content=$(echo "$content" | sed -E 's/[-/\\:;&\*]/ /g')
+#content=$(echo "$content" | sed -E 's/["“”%‘’\?]//g' | sed -E "s/[']//g")
+content=$(echo "$content" | sed -E 's/-/ /g')
+content=$(echo "$content" | sed -E 's/ +/ /g')
+content=$(echo "$content" | sed -E 's/ /-/g')
+
+# Copy the modified content back to the clipboard
+echo -n "$content" | pbcopy
+echo "$content"
+
+
+# Test string - here    it is ua&m me@you.com: yes; no \ I don't / care ‘do you?’

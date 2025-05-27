@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+# Get the clipboard content
+content=$(pbpaste)
+
+# Convert to lower case
+content=$(echo "$content" | tr '[:upper:]' '[:lower:]')
+
+# Copy the modified content back to the clipboard
+echo -n "$content" | pbcopy
+echo "$content"
