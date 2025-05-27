@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# Description: Replaces spaces with hyphens for the data in the clipboard
+
 # Get the clipboard content
 content=$(pbpaste)
 
@@ -13,6 +15,3 @@ content=$(echo "$content" | sed -E 's/ /-/g')
 # Copy the modified content back to the clipboard
 echo -n "$content" | pbcopy
 echo "$content"
-
-
-# Test string - here    it is ua&m me@you.com: yes; no \ I don't / care ‘do you?’

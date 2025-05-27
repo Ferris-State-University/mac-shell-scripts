@@ -15,18 +15,18 @@ Helper pseudo-app scripts
 
 ## apps/hyphenate.app
 
-Hyphenates the clipboard. I use it to turn file names with spaces into file names with hyphens.
+Replaces spaces with hyphens for the data in the clipboard
 
 
 ## apps/lower-case.app
 
-Converts the clipboard to lower case.
+Converts the clipboard contents to lower case
 
 
 ## apps/timestamp-token.app
 
-Puts the current timestamp on the clipboard with the format %Y_%m_%d_%H_%M_%S.
+Puts a timestamp on the clipboard in the format YYYY_mm_dd_HH_MM_SS
 
 
 ## apps/project-notes.app
-Launches the Notes project in WebStorm.
+Launches my Notes project in WebStorm

@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# Description: Converts the clipboard contents to lower case
+
 # Get the clipboard content
 content=$(pbpaste)
 

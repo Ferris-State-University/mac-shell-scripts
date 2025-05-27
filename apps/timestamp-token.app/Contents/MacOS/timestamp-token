@@ -1,3 +1,5 @@
 #!/bin/zsh
 
+# Description: Puts a timestamp on the clipboard in the format YYYY_mm_dd_HH_MM_SS
+
 date +"%Y_%m_%d_%H_%M_%S" | tr -d '\n' | pbcopy

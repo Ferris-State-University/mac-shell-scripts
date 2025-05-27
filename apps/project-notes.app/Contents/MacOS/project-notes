@@ -1,3 +1,5 @@
 #!/bin/zsh
 
+# Description: Launches my Notes project in WebStorm
+
 open -na "WebStorm.app" --args ~/Documents/Projects/Notes
